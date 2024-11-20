@@ -65,6 +65,9 @@ dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 code                                                   # ide text editor
+blender                                                # 3D modeling software
+godot                                                  # Game Engine
+
 
 # --------------------------------------------------- // System
 # downgrade                                            # downgrade packages
@@ -90,6 +93,10 @@ spicetify-cli                                          # cli to customize spotif
 # --------------------------------------------------- // Apps
 neovim                                                 # vim based text editor
 discover                                               # app installer with GUI
+snapd                                                  # snap store
+calc                                                   # calculator
+krita                                                  # drawing software
+discord                                                # social medium
 
 # --------------------------------------------------- // Shell
 eza|zsh                                                # file lister for zsh
