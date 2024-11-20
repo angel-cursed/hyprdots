@@ -12,7 +12,6 @@ xdg-desktop-portal-gtk                                 # xdg desktop portal usin
 steam                                                  # gaming platform
 gamemode                                               # daemon and library for game optimisations
 mangohud                                               # system performance overlay
-discover                                               # app installer with GUI
 # gamescope                                            # micro-compositor for gaming
 
 # --------------------------------------------------- // Music
@@ -22,3 +21,4 @@ spicetify-cli                                          # cli to customize spotif
 
 # --------------------------------------------------- // Apps
 # neovim                                               # vim based text editor
+discover                                               # app installer with GUI
