@@ -65,38 +65,6 @@ dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 code                                                   # ide text editor
-blender                                                # 3D modeling software
-godot                                                  # Game Engine
-
-
-# --------------------------------------------------- // System
-# downgrade                                            # downgrade packages
-# trash-cli-git                                        # cli to manage trash files
-# libinput-gestures                                    # actions touchpad gestures using libinput
-# gestures                                             # gui for libinput-gestures
-
-# --------------------------------------------------- // Dependencies
-xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
-emote                                                  # emoji picker gtk3
-
-# --------------------------------------------------- // Gaming
-steam                                                  # gaming platform
-gamemode                                               # daemon and library for game optimisations
-mangohud                                               # system performance overlay
-# gamescope                                            # micro-compositor for gaming
-
-# --------------------------------------------------- // Music
-cava                                                   # audio visualizer
-spotify                                                # proprietary music streaming service
-spicetify-cli                                          # cli to customize spotify client
-
-# --------------------------------------------------- // Apps
-neovim                                                 # vim based text editor
-discover                                               # app installer with GUI
-snapd                                                  # snap store
-calc                                                   # calculator
-krita                                                  # drawing software
-discord                                                # social medium
 
 # --------------------------------------------------- // Shell
 eza|zsh                                                # file lister for zsh
