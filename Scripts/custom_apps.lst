@@ -22,3 +22,9 @@ spicetify-cli                                          # cli to customize spotif
 # --------------------------------------------------- // Apps
 neovim                                                 # vim based text editor
 discover                                               # app installer with GUI
+snapd                                                  # snap store
+calc                                                   # calculator
+krita                                                  # drawing software
+discord                                                # social medium
+blender                                                # 3D modeling software
+godot                                                  # Game Engine
