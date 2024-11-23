@@ -64,6 +64,7 @@ kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
+neovim
 code                                                   # ide text editor
 
 # --------------------------------------------------- // Shell
