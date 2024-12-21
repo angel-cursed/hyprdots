@@ -1,0 +1,38 @@
+[manager]
+show_hidden = true
+sort_by = "extension"
+sort_sensitive = true
+sort_dir_first = true
+linemode = "size"
+wrap = "yes"
+tab_size = 4
+image_filter = "nearest"
+
+[opener]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" }
+]
+edit = [
+    { run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true, for = "unix" }
+]
+open = [
+    { run = 'xdg-open"$@"', desc = "Open" }
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "edit" },
+    { mime = "video/*", use = "play" },
+    { mime = "image/*", use = "open" },
+    { mime = "application/*", use = "edit" },
+    { name = "*.html", use = [ "open", "edit" ] }
+]
+
+[plugin]
+prepend_previewers = [
+   { name = "*.csv", run = "rich-preview" },
+   { name = "*.md", run = "rich-preview" },
+   { name = "*.rst", run = "rich-preview" },
+   { name = "*.ipynb", run = "rich-preview" },
+   { name = "*.json", run = "rich-preview" },
+]

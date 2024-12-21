@@ -1,0 +1,146 @@
+[[manager.append_keymap]]
+on = "!"
+run = 'shell --interactive "" --block'
+desc = "Open shell here"
+
+[[manager.append_keymap]]
+on = "p"
+run = "plugin smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+[[manager.append_keymap]]
+on = "<C-n>"
+run = '''
+    shell --interactive 'dragon -x -i -T "$1"'
+'''
+
+[[manager.append_keymap]]
+on = "<C-e>"
+run = '''
+    shell --interactive '
+        paths=$(forp in "$@"; do echo "$p"; done | paste -s -d,
+        quoted="'\'$paths\''"
+        thunderbird -compose "attachment=$quoted"
+    '
+'''
+
+[[manager.append_keymap]]
+on = "<Esc>"
+run = "escape"
+
+[[manager.append_keymap]]
+on = "q"
+run = "quit"
+
+[[manager.append_keymap]]
+on = "<Up>"
+run = "arrow -1"
+
+[[manager.append_keymap]]
+on = "<Down>"
+run = "arrow 1"
+
+[[manager.append_keymap]]
+on = "<Enter>"
+run = "enter"
+
+[[manager.append_keymap]]
+on = "<Left>"
+run = "back"
+
+[[manager.append_keymap]]
+on = "<Right>"
+run = "enter"
+
+[[manager.append_keymap]]
+on = ["g", "r"]
+run = "cd /"
+desc = "Go Root"
+
+[[manager.append_keymap]]
+on = "v"
+run = "visual_mode"
+
+[[manager.append_keymap]]
+on = "<C-c>"
+run = "yank"
+
+[[manager.append_keymap]]
+on = "<C-x>"
+run = "yank --cut"
+
+[[manager.append_keymap]]
+on = "a"
+run = "create"
+[[manager.append_keymap]]
+on = "<C-v>"
+run = "paste"
+
+[[manager.append_keymap]]
+on = "d"
+run = "remove"
+
+[[manager.append_keymap]]
+on = "a"
+run = "create"
+
+[[manager.append_keymap]]
+on = "r"
+run = "rename"
+
+[[manager.append_keymap]]
+on = "<C-S-c>"
+run = "copy"
+
+[[manager.append_keymap]]
+on = "f"
+run = "find"
+
+[[manager.append_keymap]]
+on = "<Esc>"
+run = "close"
+
+[[manager.append_keymap]]
+on = "&"
+run = "tab_switch 0"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "é"
+run = "tab_switch 1"
+desc = "Switch to the second tab" 
+
+[[manager.append_keymap]]
+on = '"'
+run = "tab_switch 2"
+desc = "Switch to the third tab" 
+
+[[manager.append_keymap]]
+on = "'"
+run = "tab_switch 3"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "("
+run = "tab_switch 4"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "-"
+run = "tab_switch 5"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "è"
+run = "tab_switch 6"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "_"
+run = "tab_switch 7"
+desc = "Switch to the first tab" 
+
+[[manager.append_keymap]]
+on = "ç"
+run = "tab_switch 8"
+desc = "Switch to the first tab" 
