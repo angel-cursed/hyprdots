@@ -1,5 +1,0 @@
-[plugin]
-deps = [{ use = "Ape/mediainfo", rev = "df17c4f" }, { use = "Reledia/glow", rev = "c2ed51e" }, { use = "AnirudhG07/rich-preview", rev = "8be4d27" }]
-
-[flavor]
-deps = []
