@@ -1,0 +1,46 @@
+[manager]
+show_hidden = true
+sort_by = "extension"
+sort_sensitive = true
+sort_dir_first = true
+linemode = "size"
+wrap = "yes"
+tab_size = 4
+image_filter = "nearest"
+
+[opener]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" }
+]
+edit = [
+    { run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true, for = "unix" }
+]
+open = [
+    { run = 'feh "$@"', desc = "Open" }
+]
+read = [
+    { run = 'mupdf "$@"', desc = "Read" } 
+]
+execute = [
+    { run = './"$@"', desc = "Execute" }
+]
+reveal = [
+	{ run = 'xdg-open "$(dirname "$1")"', desc = "Reveal", for = "linux" },
+	{ run = '''exiftool "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show EXIF", for = "unix" },
+]
+extract = [
+	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
+]
+
+[open]
+rules = [
+    { mime = "text/*", use = "edit" },
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = [ "extract", "reveal" ] },
+    { name = "*.{pdf,epub,xps,cbz,mobi,fb1,svg}", use = "read" },
+    { mime = "video/*", use = "play" },
+    { mime = "image/*", use = "open" },
+    { mime = "application/executable", use = "execute" },
+    { mime = "application/*", use = "edit" },
+    { name = "*.html", use = [ "open", "edit" ] },
+    { name = "*", use = "edit" }
+]
