@@ -31,6 +31,9 @@ reveal = [
 extract = [
 	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
 ]
+view = [
+    { run = 'apostrophe "$@"', desc = "View with markdown previewer"},
+]
 
 [open]
 rules = [
@@ -42,5 +45,6 @@ rules = [
     { mime = "application/executable", use = "execute" },
     { mime = "application/*", use = "edit" },
     { name = "*.html", use = [ "open", "edit" ] },
+    { name = "*.md", use = "view" },
     { name = "*", use = "edit" }
 ]
