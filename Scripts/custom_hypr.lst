@@ -66,6 +66,7 @@ ark                                                    # kde file archiver
 vim                                                    # terminal text editor
 neovim
 code                                                   # ide text editor
+yazi
 
 # --------------------------------------------------- // Shell
 eza|zsh                                                # file lister for zsh
