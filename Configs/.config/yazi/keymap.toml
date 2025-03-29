@@ -6,7 +6,7 @@ desc = "Open shell here"
 [[manager.append_keymap]]
 on = "<C-n>"
 run = '''
-    shell --confirm 'dragon-drop -x -i -T "$1"'
+    shell --confirm 'dragon-drop -x -i -T "$@"'
     <Enter>
 '''
 
